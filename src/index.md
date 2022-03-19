@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage:
+heroImage: https://github.com/malaquiasdev/thepixardb-jow/blob/main/src/assets/home-onward.png?raw=true
 tagline: Free and Open Source
 actionText: Quick Start →
 actionLink: /guide/
