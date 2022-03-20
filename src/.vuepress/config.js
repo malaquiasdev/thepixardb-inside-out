@@ -36,11 +36,20 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: 'Guide',
+          title: 'Getting Started',
           collapsable: false,
           children: [
             '',
-            'using-vue',
+            'languages',
+          ]
+        },
+        {
+          title: 'Wall-e Database',
+          collapsable: false,
+          children: [
+            'walle/intro',
+            'walle/movie',
+            'walle/image'
           ]
         }
       ],

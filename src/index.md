@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /home-onward.png
+heroImage: https://thepixardb.malaquias.dev/home-onward.png
 tagline: Free and Open Source
 actionText: Quick Start →
 actionLink: /guide/
