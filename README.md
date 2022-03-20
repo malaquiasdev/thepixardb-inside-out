@@ -4,7 +4,7 @@
   <img width="400" height="200" src=".github/perfil.jpg"/>
 </p>
 
-This repository contains the source code of the documentation for [ThePixarDB](). This website is built on [vuepress](https://vuepress.vuejs.org), a static site generator similar.
+This repository contains the source code of the documentation for [ThePixarDB](). This website is built on [vuepress](https://vuepress.vuejs.org), a static site generator.
 
 ## Contribute 🍕
 
