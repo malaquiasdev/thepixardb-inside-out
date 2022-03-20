@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://github.com/malaquiasdev/thepixardb-jow/blob/main/src/assets/home-onward.png?raw=true
+heroImage: /home-onward.png
 tagline: Free and Open Source
 actionText: Quick Start →
 actionLink: /guide/
@@ -11,5 +11,8 @@ features:
     details: All data you will need in one place, easily accessible. We have the essential metadata, ratings from IMDb, Rotten Tomatoes and Metacritic or just find where watch it.
   - title: How can I use it?
     details: We are RESTful. With nearly limitless quota on requests, you have the freedom to create what you want with our API.
-footer: Made by Mateus Malaquias with ❤️
 ---
+
+::: slot footer
+MIT Licensed | Copyright © 2022-present | [Made by Mateus Malaquias with ❤️ ](https://github.com/malaquiasdev)
+:::

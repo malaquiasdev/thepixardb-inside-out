@@ -29,7 +29,8 @@ module.exports = {
       },
       {
         text: 'Github',
-        link: 'https://github.com/search?q=malaquiasdev%2Fthepixardb'
+        link: 'https://github.com/search?q=malaquiasdev%2Fthepixardb',
+        target:'_blank'
       }
     ],
     sidebar: {
