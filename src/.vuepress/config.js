@@ -20,9 +20,6 @@ module.exports = {
         link: '/'
       },
       {
-        text: 'Show Room',
-      },
-      {
         text: 'Guide',
         link: '/guide/',
       },
