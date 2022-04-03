@@ -6,13 +6,26 @@ sidebar: auto
 
 ## Who we are
 
-We are an unofficial open-source project for the best movie componay of the world. We are fans of the Pixar Animation Studios.
+We are an open-source metadata aggregation engine for the best movie componay of the world. We are fans of the Pixar Animation Studios.
 
-Our main goal is connect you with them. We have a curated database and some benefits like:
+Our main goal is to have the best core metadata information to provide a universal view, along with ingesting individual data from others providers
+to enrich our dataset and be an unique API and one click to go.
+
+We have some benefits like:
 
 - Strict guidelines to ensure consistently high quality data across datasets, categories and regions.
-- Our data is multi language, we have support to: english and portuguese.
-- The datasets contains movies information like rating, runtime, cast and crew. Celebrity information like primary Name, gender, birthplace, and awards. A lot of posters and banners pictures.
+- Our data is multi language.
+- The datasets contains movies information like rating, runtime, cast and crew. Celebrity information like primary Name, gender, birthplace, and awards and pictures.
+
+## How much information do we have here?
+
+Working in progress...
+
+## The API is missing stuff 😔
+
+We know! Feel free to contribute to open issues on <a href="https://github.com/malaquiasdev/thepixardb" target="_blank">GitHub.</a>
+
+Have ideas for new features? Oen a issue too!!
 
 ## Legal Notice
 

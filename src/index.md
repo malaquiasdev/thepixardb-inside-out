@@ -6,9 +6,9 @@ actionText: Quick Start →
 actionLink: /guide/
 features:
   - title: What is this?
-    details: We are the world’s leading provider of Pixar company data, helping people connect to the movies and celebrities from the company.
+    details: We are a metadata aggregation engine focused on Pixar Animation Studios.
   - title: Centralized Data
-    details: All data you will need in one place, easily accessible. We have the essential metadata, ratings from IMDb, Rotten Tomatoes and Metacritic or just find where watch it.
+    details: One API to you pick a accurate data from TMDB, IMDb, Rotten Tomatoes, Metacritic, Justwatch and others.
   - title: How can I use it?
     details: We are RESTful. With nearly limitless quota on requests, you have the freedom to create what you want with our API.
 ---
