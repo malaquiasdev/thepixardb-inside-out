@@ -28,6 +28,10 @@ module.exports = {
         activeMatch: `^/ecosystem/`,
         items: [
           {
+            text: 'Diagram of the Ecosystem',
+            link: '/ecosystem/diagram/',
+          },
+          {
             text: 'Metadata Aggregation',
             link: '/ecosystem/walle/',
           }

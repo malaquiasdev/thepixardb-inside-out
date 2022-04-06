@@ -6,7 +6,17 @@ Retrieve a list of movies ordered by newest.
 
 ### <span style="color:green"><strong>GET</strong></span> `https://thepixardb.malaquias.dev/api/v0/movies`
 
+### Query String
 
+| Name     |  Type  | Required |                                                                                  Description |
+| -------- | :----: | -------: | -------------------------------------------------------------------------------------------: |
+| language | string |    false | Pass a ISO 639-1 value to display translated data for the fields that support. default: "en" |
+
+### cURL
+
+::: details
+curl --location --request GET 'https://thepixardb.malaquias.dev/api/v0/movies?language=en'
+:::
 
 ```json
 [
@@ -37,8 +47,8 @@ Retrieve a list of movies ordered by newest.
 ]
 ```
 
-::: warning
-We are still a beta version
+::: tip
+To understand the object schema better, please visit [the page.](../../../ecosystem/walle/movie.md)
 :::
 
 ## movies/{id} (endpoint)
@@ -46,6 +56,18 @@ We are still a beta version
 Get the primary information about a movie.
 
 ### <span style="color:green"><strong>GET</strong></span> `https://thepixardb.malaquias.dev/api/v0/movies/{id}`
+
+### Query String
+
+| Name     |  Type  | Required |                                                                                  Description |
+| -------- | :----: | -------: | -------------------------------------------------------------------------------------------: |
+| language | string |    false | Pass a ISO 639-1 value to display translated data for the fields that support. default: "en" |
+
+### cURL
+
+::: details
+curl --location --request GET 'https://thepixardb.malaquias.dev/api/v0/movies/MV508947?language=en'
+:::
 
 ```json
 {
