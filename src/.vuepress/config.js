@@ -36,8 +36,8 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: 'API',
-          collapsable: true,
+          title: 'API - Getting Started',
+          collapsable: false,
           children: [
             '',
             'api/languages',
@@ -46,6 +46,13 @@ module.exports = {
             'api/http-methods',
             'api/status-codes',
             'api/external-ids',
+            {
+              title: 'Resource',
+              collapsable: false,
+              children: [
+                'api/resources/movies',
+              ]
+            }
           ]
         },
         {
