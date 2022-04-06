@@ -36,16 +36,28 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: 'Getting Started',
+          title: 'API - Getting Started',
           collapsable: false,
           children: [
             '',
-            'languages',
+            'api/languages',
+            'api/json',
+            'api/authentication',
+            'api/http-methods',
+            'api/status-codes',
+            'api/external-ids',
+            {
+              title: 'Resource',
+              collapsable: false,
+              children: [
+                'api/resources/movies',
+              ]
+            }
           ]
         },
         {
-          title: 'Wall-e Database',
-          collapsable: false,
+          title: 'Metadata Agregator',
+          collapsable: true,
           children: [
             'walle/intro',
             'walle/movie',
