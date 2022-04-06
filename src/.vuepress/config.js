@@ -1,4 +1,4 @@
-const { description } = require('../../package')
+const { description } = require('../../package');
 
 module.exports = {
   title: 'ThePixarDB',
@@ -6,7 +6,7 @@ module.exports = {
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
   ],
   themeConfig: {
     repo: '',
@@ -17,26 +17,36 @@ module.exports = {
     nav: [
       {
         text: 'Home',
-        link: '/'
+        link: '/',
       },
       {
         text: 'Guide',
         link: '/guide/',
       },
       {
+        text: 'Ecosystem',
+        activeMatch: `^/ecosystem/`,
+        items: [
+          {
+            text: 'Metadata Aggregation',
+            link: '/ecosystem/walle/',
+          }
+        ],
+      },
+      {
         text: 'About',
-        link: '/about/'
+        link: '/about/',
       },
       {
         text: 'Github',
         link: 'https://github.com/search?q=malaquiasdev%2Fthepixardb',
-        target:'_blank'
-      }
+        target: '_blank',
+      },
     ],
     sidebar: {
       '/guide/': [
         {
-          title: 'API - Getting Started',
+          title: 'Getting Started',
           collapsable: false,
           children: [
             '',
@@ -46,29 +56,26 @@ module.exports = {
             'api/http-methods',
             'api/status-codes',
             'api/external-ids',
-            {
-              title: 'Resource',
-              collapsable: false,
-              children: [
-                'api/resources/movies',
-              ]
-            }
-          ]
+          ],
         },
         {
-          title: 'Metadata Agregator',
-          collapsable: true,
-          children: [
-            'walle/intro',
-            'walle/movie',
-            'walle/image'
-          ]
-        }
+          title: 'Resources',
+          collapsable: false,
+          children: ['api/resources/movies'],
+        },
       ],
-    }
+      '/ecosystem/walle/': [
+        {
+          title: 'Getting Started',
+          collapsable: false,
+          children: [
+            '',
+            '/ecosystem/walle/movie',
+            '/ecosystem/walle/image',
+          ],
+        },
+      ]
+    },
   },
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+  plugins: ['@vuepress/plugin-back-to-top', '@vuepress/plugin-medium-zoom'],
+};
