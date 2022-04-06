@@ -12,3 +12,7 @@ ThePixarDb supports a variety of external ids.
 | Facebook        |        |              |             |        |
 | Instagram       |        |              |             |        |
 | Twitter         |        |              |             |        |
+
+::: warning
+We are still a beta version
+:::

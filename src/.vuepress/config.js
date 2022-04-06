@@ -36,23 +36,21 @@ module.exports = {
     sidebar: {
       '/guide/': [
         {
-          title: 'API - Getting Started',
-          collapsable: false,
+          title: 'API',
+          collapsable: true,
           children: [
             '',
-            'languages',
-            'authentication',
-            'external-ids',
-            'popularity',
-            'json',
-            'request-limite',
-            'caching',
-            'movies/get-all',
+            'api/languages',
+            'api/json',
+            'api/authentication',
+            'api/http-methods',
+            'api/status-codes',
+            'api/external-ids',
           ]
         },
         {
           title: 'Metadata Agregator',
-          collapsable: false,
+          collapsable: true,
           children: [
             'walle/intro',
             'walle/movie',

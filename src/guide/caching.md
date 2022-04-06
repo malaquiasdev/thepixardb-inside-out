@@ -1,3 +1,0 @@
-# Caching
-
-Working in progress...
