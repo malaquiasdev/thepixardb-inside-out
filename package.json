@@ -1,6 +1,6 @@
 {
   "name": "inside-out",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The API documentation website",
   "private": true,
   "main": "index.js",
