@@ -1,9 +1,7 @@
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
 
-export default function Home(): NextPage {
-   return (
+export default function Home(): JSX.Element {
+  return (
     <div className="">
       <Head>
         <title>ThePixarDB App</title>
@@ -11,5 +9,5 @@ export default function Home(): NextPage {
       </Head>
       <h1>ThePixarDB</h1>
     </div>
-  ) 
+  )
 }
