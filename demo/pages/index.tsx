@@ -1,12 +1,9 @@
-import Head from 'next/head'
+import Header from '../components/Header'
 
 export default function Home(): JSX.Element {
   return (
     <div className="">
-      <Head>
-        <title>ThePixarDB App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <Header />
       <h1>ThePixarDB</h1>
     </div>
   )
