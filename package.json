@@ -1,4 +1,7 @@
 {
+  "name": "website",
+  "version": "0.0.7",
+  "description": "The API documentation website",
   "private": true,
   "scripts": {
     "dev": "next dev",
