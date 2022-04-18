@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import {
   HomeIcon,
-  PlusIcon,
   SearchIcon,
+  CodeIcon,
   StarIcon,
+  ExternalLinkIcon,
 } from '@heroicons/react/solid'
 
 export default function Header() {
@@ -21,24 +22,29 @@ export default function Header() {
           <span className="span">Home</span>
         </a>
         <a className="header-link group">
+          <CodeIcon className="h-4" />
+          <span className="span">API Doc</span>
+        </a>
+        <a className="header-link group">
+          <img src="/images/movie-icon.svg" alt="" className="h-5" />
+          <span className="span">Live Demo</span>
+        </a>
+        <a className="header-link group">
           <SearchIcon className="h-4" />
           <span className="span">Search</span>
         </a>
         <a className="header-link group">
-          <PlusIcon className="h-4" />
-          <span className="span">Watchlist</span>
-        </a>
-        <a className="header-link group">
           <StarIcon className="h-4" />
-          <span className="span">Originals</span>
+          <span className="span">About</span>
         </a>
         <a className="header-link group">
-          <img src="/images/movie-icon.svg" alt="" className="h-5" />
-          <span className="span">Movies</span>
-        </a>
-        <a className="header-link group">
-          <img src="/images/series-icon.svg" alt="" className="h-5" />
-          <span className="span">Series</span>
+          <ExternalLinkIcon className="h-4" />
+          <a
+            href="https://github.com/search?q=malaquiasdev%2Fthepixardb"
+            target="_blank"
+          >
+            <span className="span">Github</span>
+          </a>
         </a>
       </div>
     </div>
