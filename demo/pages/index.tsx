@@ -1,10 +1,11 @@
 import Header from '../components/Header'
+import Hero from '../components/Hero/index'
 
 export default function Home(): JSX.Element {
   return (
     <div className="">
       <Header />
-      <h1>ThePixarDB</h1>
+      <Hero></Hero>
     </div>
   )
 }
