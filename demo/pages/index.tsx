@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Feature from '../components/Feature'
 import Header from '../components/Header'
 import Hero from '../components/Hero/index'
 import Slider from '../components/Slider'
@@ -11,8 +12,9 @@ export default function Home(): JSX.Element {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <Hero />
       <main>
+        <Hero />
+        <Feature />
         <Slider />
       </main>
     </div>
