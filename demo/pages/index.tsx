@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import DataDisplayStats from '../components/DataDisplayStats'
 import Feature from '../components/Feature'
 import Header from '../components/Header'
 import Hero from '../components/Hero/index'
@@ -15,6 +16,7 @@ export default function Home(): JSX.Element {
       <main>
         <Hero />
         <Feature />
+        <DataDisplayStats />
         <Slider />
       </main>
     </div>
