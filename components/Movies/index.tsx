@@ -1,4 +1,4 @@
-import MovieThumbnail from './MovieThumbnail/index'
+import MovieThumbnail from './MovieThumbnail'
 export interface IMovieData {
   id: string
   title: string
