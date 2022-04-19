@@ -19,7 +19,7 @@ export default function Home({ data }: { data?: IMovieData[] }): JSX.Element {
         <Feature />
         <DataDisplayStats />
         <Slider />
-        <Movies data={data} />
+        <Movies data={data} title="Movies" />
       </main>
     </div>
   )
@@ -31,8 +31,18 @@ export async function getServerSideProps() {
   return {
     props: {
       data: movies.map(
-        (m: { id: string; title: string; posterUrl: string }) => {
-          return { id: m.id, title: m.title, posterUrl: m.posterUrl }
+        (m: {
+          id: string
+          title: string
+          posterUrl: string
+          bannerUrl: string
+        }) => {
+          return {
+            id: m.id,
+            title: m.title,
+            posterUrl: m.posterUrl,
+            bannerUrl: m.bannerUrl,
+          }
         }
       ),
     },
