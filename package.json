@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "The API documentation website",
   "private": true,
   "scripts": {
