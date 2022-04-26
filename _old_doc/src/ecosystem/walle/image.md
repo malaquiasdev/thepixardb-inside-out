@@ -1,3 +1,0 @@
-# Image Quality
-
-WORKING IN PROGRESS
