@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import DataDisplayStats from '../components/DataDisplayStats'
 import Feature from '../components/Feature'
+import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hero from '../components/Hero/index'
 import { Movies, IMovieData } from '../components/Movies'
@@ -20,6 +21,7 @@ export default function Home({ data }: { data?: IMovieData[] }): JSX.Element {
         <DataDisplayStats />
         <Slider />
         <Movies data={data} title="Movies" />
+        <Footer />
       </main>
     </div>
   )
