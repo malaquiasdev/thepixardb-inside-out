@@ -1,10 +1,10 @@
 export default function Hero() {
   return (
-    <section className="hero relative overflow-hidden bg-black">
+    <section className="hero relative overflow-hidden">
       <div className="mx-auto max-w-7xl">
-        <div className="relative z-10 bg-black pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+        <div className="relative z-10 bg-[#040714] pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
           <svg
-            className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-black lg:block"
+            className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-[#040714] lg:block"
             fill="currentColor"
             viewBox="0 0 100 100"
             preserveAspectRatio="none"
@@ -21,7 +21,7 @@ export default function Hero() {
                   OTT project
                 </span>
               </h1>
-              <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
+              <p className="text-white mt-3 text-base sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
                 Free and Open Source ❤️
               </p>
               <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
