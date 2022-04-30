@@ -5,8 +5,8 @@ import Footer from '../components/Footer'
 import Header from '../components/Header'
 import Hero from '../components/Home/Hero/index'
 import { Movies, IMovieData } from '../components/Movies'
-import Slider from '../components/Home/Slider'
 import Galary from '../components/Home/Galary'
+import DemoLink from '../components/Home/DemoLink'
 
 export default function Home({ data }: { data?: IMovieData[] }): JSX.Element {
   return (
@@ -21,7 +21,7 @@ export default function Home({ data }: { data?: IMovieData[] }): JSX.Element {
         <Feature />
         <DataDisplayStats />
         <Galary />
-        <Movies data={data} title="Movies" />
+        <DemoLink />
         <Footer />
       </main>
     </div>

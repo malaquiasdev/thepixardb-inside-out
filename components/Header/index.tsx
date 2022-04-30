@@ -9,7 +9,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-[1000] flex h-[72px] items-center bg-[#090b13] px-10 md:px-12">
+    <div className="sticky top-0 z-[1000] flex h-[72px] items-center px-10 md:px-12">
       <span className="text-xl font-medium text-white">ThePixarDB</span>
       <div className="ml-10 hidden items-center space-x-6 md:flex">
         <a className="header-link group">
