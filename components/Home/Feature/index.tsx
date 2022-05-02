@@ -33,7 +33,7 @@ const features = [
 
 export default function Feature() {
   return (
-    <div className="relative mx-auto mt-7 bg-black px-10 md:px-12">
+    <div className="relative mx-auto mt-7 px-10 md:px-12">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="lg:text-center">
           <h2 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-indigo-600 sm:text-4xl">
