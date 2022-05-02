@@ -1,4 +1,4 @@
-import MovieThumbnail from './MovieThumbnail'
+import MovieThumbnail from './MovieCard'
 export interface IMovieData {
   id: string
   title: string
@@ -12,7 +12,7 @@ export function Movies({
 }: {
   data?: IMovieData[]
   title: string
-}): JSX.Element {
+}) {
   return (
     <div className="relative my-10 mx-auto flex max-w-[1900px] flex-col space-y-2 px-8">
       <h2 className="font-semibold">{title}</h2>
