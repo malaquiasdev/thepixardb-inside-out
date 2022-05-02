@@ -10,9 +10,11 @@ import {
 export default function Header() {
   return (
     <div className="sticky top-0 z-[1000] flex h-[72px] items-center px-10 md:px-12">
-      <span className="text-xl font-medium text-white">ThePixarDB</span>
+      <a href="/">
+        <span className="text-xl font-medium text-white">ThePixarDB</span>
+      </a>
       <div className="ml-10 hidden items-center space-x-6 md:flex">
-        <a className="header-link group">
+        <a className="header-link group" href="/">
           <HomeIcon className="h-4" />
           <span className="span">Home</span>
         </a>
@@ -20,7 +22,7 @@ export default function Header() {
           <CodeIcon className="h-4" />
           <span className="span">API Doc</span>
         </a>
-        <a className="header-link group">
+        <a className="header-link group" href="/demo">
           <img src="/images/movie-icon.svg" alt="" className="h-5" />
           <span className="span">Live Demo</span>
         </a>
