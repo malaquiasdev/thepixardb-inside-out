@@ -13,7 +13,7 @@ export default function DemoPage({ data }: { data?: IMovieData[] }) {
       </Head>
       <Header />
       <main>
-        <Slider />
+        <Slider movies={data?.slice(0, 3)} />
         <Movies data={data} title="Movies" />
       </main>
     </div>
