@@ -1,10 +1,12 @@
 import React from 'react'
+import Image from 'next/image'
 import { Carousel } from 'react-responsive-carousel'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { IMovieData } from '../index'
 
-export default function Slider() {
+export default function Slider({ movies }: { movies?: IMovieData[] }) {
   return (
-    <section className="flex">
+    <section className="relative mx-auto mt-7 max-w-screen-xl shadow-sm">
       <Carousel
         autoPlay
         infiniteLoop
@@ -13,41 +15,21 @@ export default function Slider() {
         showThumbs={false}
         interval={3000}
       >
-        <div>
-          <img
-            loading="lazy"
-            src="https://raw.githubusercontent.com/malaquiasdev/thepixardb-wall-e/main/data/movies/MV508947/images/16_9/en_w1920_h1080.jpeg"
-            alt="Turning Red"
-          />
-        </div>
-        <div>
-          <img
-            loading="lazy"
-            src="https://raw.githubusercontent.com/malaquiasdev/thepixardb-wall-e/main/data/movies/MV508943/images/16_9/en_w1920_h1080.jpeg"
-            alt="Luca"
-          />
-        </div>
-        <div>
-          <img
-            loading="lazy"
-            src="https://raw.githubusercontent.com/malaquiasdev/thepixardb-wall-e/main/data/movies/MV508442/images/16_9/en_w3840_h2160.jpeg"
-            alt="Soul"
-          />
-        </div>
-        <div>
-          <img
-            loading="lazy"
-            src="https://raw.githubusercontent.com/malaquiasdev/thepixardb-wall-e/main/data/movies/MV508439/images/16_9/en_w1440_h810.jpeg"
-            alt="Onward"
-          />
-        </div>
-        <div>
-          <img
-            loading="lazy"
-            src="https://raw.githubusercontent.com/malaquiasdev/thepixardb-wall-e/main/data/movies/MV301528/images/16_9/en_w3840_h2160.jpeg"
-            alt="Toy Story 4"
-          />
-        </div>
+        {movies?.map((m: IMovieData) => {
+          return (
+            <div>
+              <Image
+                src={m.bannerUrl}
+                width={1320}
+                height={495}
+                loading="lazy"
+                objectFit="cover"
+                className="rounded-lg"
+                alt="Turning Red"
+              />
+            </div>
+          )
+        })}
       </Carousel>
     </section>
   )

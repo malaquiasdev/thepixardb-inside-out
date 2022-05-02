@@ -1,7 +1,5 @@
-import Image from 'next/image'
 import {
   HomeIcon,
-  SearchIcon,
   CodeIcon,
   StarIcon,
   ExternalLinkIcon,
@@ -9,7 +7,7 @@ import {
 
 export default function Header() {
   return (
-    <div className="sticky top-0 z-[1000] flex h-[72px] items-center px-10 md:px-12">
+    <div className="sticky top-0 z-[1000] flex h-[72px] items-center bg-[#090b13] px-10 md:px-12">
       <a href="/">
         <span className="text-xl font-medium text-white">ThePixarDB</span>
       </a>
@@ -25,10 +23,6 @@ export default function Header() {
         <a className="header-link group" href="/demo">
           <img src="/images/movie-icon.svg" alt="" className="h-5" />
           <span className="span">Live Demo</span>
-        </a>
-        <a className="header-link group">
-          <SearchIcon className="h-4" />
-          <span className="span">Search</span>
         </a>
         <a className="header-link group">
           <StarIcon className="h-4" />
