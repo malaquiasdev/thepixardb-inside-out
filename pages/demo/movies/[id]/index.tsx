@@ -51,7 +51,7 @@ export default function MoviesDetailPage({ data }: { data: IMovieDetail }) {
 
 export async function getServerSideProps(context: any): Promise<any> {
   const res = await fetch(
-    `https://thepixardb.malaquias.dev/api/v0/movies/${context.query.id}`
+    `https://apithepixardb.malaquias.dev/api/v0/movies/${context.query.id}`
   )
   const movie = await res.json()
   return {
