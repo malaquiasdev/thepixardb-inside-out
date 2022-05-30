@@ -24,7 +24,7 @@ export default function Header() {
           <img src="/images/movie-icon.svg" alt="" className="h-5" />
           <span className="span">Live Demo</span>
         </a>
-        <a className="header-link group">
+        <a className="header-link group" href="/about">
           <StarIcon className="h-4" />
           <span className="span">About</span>
         </a>
