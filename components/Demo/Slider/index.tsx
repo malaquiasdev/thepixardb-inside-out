@@ -17,7 +17,7 @@ export default function Slider({ movies }: { movies?: IMovieData[] }) {
       >
         {movies?.map((m: IMovieData) => {
           return (
-            <div>
+            <div key={m.id}>
               <Image
                 src={m.bannerUrl}
                 width={1320}

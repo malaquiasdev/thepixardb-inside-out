@@ -21,7 +21,7 @@ export default function DemoPage({ data }: { data?: IMovieData[] }) {
 }
 
 export async function getServerSideProps() {
-  const res = await fetch('https://thepixardb.malaquias.dev/api/v0/movies')
+  const res = await fetch('https://apithepixardb.malaquias.dev/api/v0/movies')
   const movies = await res.json()
   return {
     props: {
