@@ -21,8 +21,8 @@ export default function Home(): JSX.Element {
         <DataDisplayStats />
         <Galary />
         <DemoLink />
-        <Footer />
       </main>
+      <Footer />
     </div>
   )
 }

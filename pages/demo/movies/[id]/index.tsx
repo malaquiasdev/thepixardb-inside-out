@@ -1,4 +1,8 @@
 import React from 'react'
+import Image from 'next/image'
+import Head from 'next/head'
+import Header from '../../../../components/Header/index'
+import Footer from '../../../../components/Footer'
 
 type IMovieDetail = {
   id: string
@@ -9,24 +13,38 @@ type IMovieDetail = {
   budget: number
   revenue: number
   releaseYear: number
-  rating: any
+  rating: string
   images: any
 }
 
 export default function MoviesDetailPage({ data }: { data: IMovieDetail }) {
   return (
     <div>
-      <p>{data.id}</p>
-      <h1>{data.title}</h1>
-      <p>{data.description}</p>
-      <p>{data.genres}</p>
-      <p>{data.runtime}</p>
-      <p>{data.budget}</p>
-      <p>{data.releaseYear}</p>
-      <p>{data.revenue}</p>
-      <p>{data.rating.organ}</p>
-      <p>{data.rating.value}</p>
-      <p>{data.images[0].path}</p>
+      <Head>
+        <title>ThePixarDB: The Best OTT Database</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <Header />
+      <main>
+        <div className="absolute -z-10">
+          <div className="relative min-h-[calc(100vh-72px)]">
+            <Image src={data.images} layout="fill" objectFit="cover" />
+          </div>
+        </div>
+        <section className="relative z-50">
+          <p>{data.id}</p>
+          <h1>{data.title}</h1>
+          <p>{data.description}</p>
+          <p>{data.genres}</p>
+          <p>{data.runtime}</p>
+          <p>{data.budget}</p>
+          <p>{data.releaseYear}</p>
+          <p>{data.revenue}</p>
+          <p>{data.rating}</p>
+          <p>{data.images}</p>
+        </section>
+      </main>
+      <Footer />
     </div>
   )
 }
@@ -49,8 +67,8 @@ export async function getServerSideProps(context: any): Promise<any> {
         budget: movie.budget,
         releaseYear: movie.releaseDate?.split('-')[0],
         revenue: movie.revenue,
-        rating: movie.rating,
-        images: movie.images,
+        rating: movie.rating.value,
+        images: movie.images[1].path,
       },
     },
   }

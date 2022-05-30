@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Header from '../../components/Header'
 import Slider from '../../components/Demo/Slider'
 import { Movies, IMovieData } from '../../components/Demo'
+import Footer from '../../components/Footer'
 
 export default function DemoPage({ data }: { data?: IMovieData[] }) {
   return (
@@ -16,6 +17,7 @@ export default function DemoPage({ data }: { data?: IMovieData[] }) {
         <Slider movies={data?.slice(0, 3)} />
         <Movies data={data} title="Movies" />
       </main>
+      <Footer />
     </div>
   )
 }
